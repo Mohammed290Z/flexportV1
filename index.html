@@ -677,7 +677,7 @@
     <div class="hero-cta">
       <a href="#buy" class="btn btn-primary">Buy $PORT</a>
     </div>
-    <div class="closer">[X] traders docked in the last hour. Your container can wait. Your bag doesn't have to.</div>
+    <div class="closer"><span id="stat-traders-1h">[X]</span> traders docked in the last hour. Your container can wait. Your bag doesn't have to.</div>
   </div>
 </section>
 
@@ -729,10 +729,15 @@ async function fetchMarketStats() {
 
     const mcapEl = document.getElementById("stat-mcap");
     const volEl = document.getElementById("stat-volume");
+    const tradersEl = document.getElementById("stat-traders-1h");
     if (mcapEl && pair.fdv) mcapEl.textContent = formatUSD(Number(pair.fdv)) + " mkt cap";
     if (volEl && pair.volume?.h24) {
       const ethVol = pair.priceUsd ? (Number(pair.volume.h24) / Number(pair.priceUsd)) : null;
       volEl.textContent = (ethVol ? ethVol.toFixed(1) + " ETH" : formatUSD(Number(pair.volume.h24))) + " traded today";
+    }
+    if (tradersEl && pair.txns?.h1) {
+      // Dexscreener gives buy/sell counts, not unique wallets — this is a proxy for "activity", not exact traders
+      tradersEl.textContent = (Number(pair.txns.h1.buys || 0) + Number(pair.txns.h1.sells || 0)).toLocaleString();
     }
   } catch (err) {
     console.error("Dexscreener fetch failed:", err);
