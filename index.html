@@ -1,56 +1,3 @@
-
-Claude finished the response
-make a website about this coin:
-
-Flexportalina
-$PORTFlexportalina ($PORT) is a narrative-driven token built around global logistics, international trade While supply chains hit bottlenecks, tariffs, and customs friction, $PORT turns freight and shipping into on-chain momentum. The story is supply-chain alpha: the builder who unblocks trade lanes and sends frictionless gains to traders with no delays, tariffs, or middlemen.Flexportalina ($PORT) is a high-conviction culture token rooted in the multi-trillion-dollar world of global logistics.
-When global supply chains seized up and container ships sat locked outside major West Coast ports, one tech founder didn’t wait for committees. They surveyed the clogged terminals firsthand, posted a viral thread naming the bottlenecks, and pushed city and federal authorities into emergency regulatory changes within 24 hours. Crypto narrative
-Global commerce runs on friction: tariff schedules, trade wars, customs red tape, and middlemen. $PORT turns that macro fight into on-chain culture. While fiat trade slows, $PORT stands for borderless velocity on Solana. It is the “Supply Chain Alpha” coin—container ships, port cranes, and bill-of-lading pain turned into meme energy and uninterrupted liquidity.Core pillars Zero-Tariff Liquidity: In a world of rising tariffs, $PORT has 0% transaction taxes—speed straight into trader wallets.
-Container-Sized Momentum: Built for FinTwit and founder culture: celebrating builders who clear real-world physical bottlenecks.
-The Cargo Fleet: A syndicate of traders and builders who meme through economic chaos and ship green candles past customs.
-$PORT is not a generic dog coin or a hollow clone. It is a movement that bridges industrial logistics culture with high-speed Solana degen energy.
-
-Read a file, created a file, shared files
-Built it around the actual cargo-logistics world instead of the usual crypto-site template: industrial navy/steel palette, a stencil display face for the container-marking look, an animated port crane in the hero, a "bill of lading" doc block for the origin story, container crates as visual elements, and a manifest-table footer with a disclaimer instead of fake links. Contract address, chart, and socials are left as placeholders — swap them in once they exist.
-
-
-Port coin
-Code·HTML 
-make the website a little bit web3 and more casual just alittle not too much to be appealing for CT. Feel free to add a mascot or anything animated
-
-Edited 7 files
-I dialed the tone up just a notch without tipping it into full degen — here's what changed:
-
-Mascot — "Porty," a friendly cargo container with a captain's hat, sunglasses, and a permanently waving arm, floats and bobs next to the hero copy, with a few twinkling sparkles around him.
-Marquee strip — a scrolling orange ticker under the hero ("0% TAX · WAGMI · LFG · NO CUSTOMS · BORDERLESS VELOCITY") — the classic CT-site touch.
-Glow orbs — soft blurred color glows behind the hero and pillars sections for that on-chain-site ambience, kept subtle so the industrial stencil look still leads.
-Softer shapes — pill-shaped buttons with a hover lift, rounded crate corners — friendlier without losing the container motif.
-A couple of casual lines — "gm," "wagmi," "LFG" sprinkled in just two spots (hero kicker, closing CTA), not throughout.
-Everything's respects prefers-reduced-motion. Updated file's in the same download — let me know if you want the marquee phrases changed or the mascot leaning more "founder in a hard hat" than "sunglasses degen."
-
-keep everything the same, and here is the copy of the website use it and buikld around it
-
-It looks like the copy didn't come through in your message — I don't see any text pasted after that line. Could you paste the copy you want me to use? Once I have it, I'll drop it into the current design (mascot, marquee, glow orbs, and all) without changing the layout or styling.
-
-
-# $PORT ### Trade is slow. This coin isn’t. **The internet’s answer to tariffs, customs delays, and containers stuck at sea.** **$PORT · Solana · 0% Tax** [ **BUY $PORT** ] [ **VIEW CHART** ] **Contract:** `PASTE CONTRACT ADDRESS` [ Copy Contract ] --- ## 🚢 YOUR CONTAINER IS DELAYED. ## YO
-
-pasted
-
-Ran a command, created a file, shared files
-Rebuilt the full page around your copy, section by section — hero, "your container is delayed" hook, live-trade card, the three "why $PORT" bits (delay/tariff/berth), the joke section, the 4-step buy guide, the meme kit, the Kite Harbor lore block with the Stamp Skip, the join/community section, the radar recap, the full disclaimer, and the closing CTA — all still wearing the same mascot, marquee, glow-orb, and industrial-stencil design system as before. Every "PASTE CONTRACT ADDRESS" spot has a working copy button wired to it, so you can just paste the real contract in those value divs (search for PASTE CONTRACT ADDRESS in the file) once it exists — same for the placeholder social links.
-
-
-Port coin
-Code·HTML 
-
-Write a message…
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-
-
-Port coin · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,10 +39,10 @@ Port coin · HTML
   a{color:inherit;}
   img,svg{display:block; max-width:100%;}
   button{ font-family:inherit; cursor:pointer; }
- 
+
   .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
   @media (max-width:640px){ .wrap{padding:0 20px;} }
- 
+
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:50;
@@ -118,7 +65,7 @@ Port coin · HTML
     text-decoration:none; white-space:nowrap;
   }
   @media (max-width:760px){ nav ul{display:none;} }
- 
+
   /* ---------- BUTTONS ---------- */
   .btn{
     display:inline-block; padding:14px 28px; border-radius:999px;
@@ -131,12 +78,12 @@ Port coin · HTML
   .btn-ghost{ border-color:rgba(233,226,208,0.35); color:var(--paper); background:transparent; }
   .btn-ghost:hover{ border-color:var(--yellow); color:var(--yellow); transform:translateY(-2px); }
   .btn-row{ display:flex; gap:14px; flex-wrap:wrap; }
- 
+
   /* ---------- glow orbs ---------- */
   .orb{ position:absolute; border-radius:50%; filter:blur(70px); pointer-events:none; z-index:0; }
   .orb-orange{ background:rgba(226,85,30,0.35); width:420px; height:420px; }
   .orb-yellow{ background:rgba(242,183,5,0.22); width:300px; height:300px; }
- 
+
   /* ---------- marquee ---------- */
   .marquee{
     overflow:hidden; background:var(--orange);
@@ -151,7 +98,7 @@ Port coin · HTML
   .marquee-track span::after{ content:"◆"; font-size:0.7rem; opacity:0.5; }
   @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
   @media (prefers-reduced-motion:reduce){ .marquee-track{animation:none;} }
- 
+
   /* ---------- mascot ---------- */
   .mascot-float{ animation:bob 3.2s ease-in-out infinite; transform-origin:50% 50%; }
   @keyframes bob{
@@ -173,7 +120,7 @@ Port coin · HTML
     50%{ opacity:1; transform:scale(1.1); }
   }
   @media (prefers-reduced-motion:reduce){ .mascot-float,.mascot-arm,.sparkle{animation:none;} }
- 
+
   /* ---------- HERO ---------- */
   .hero{
     position:relative; padding:56px 0 0;
@@ -191,7 +138,7 @@ Port coin · HTML
     padding:5px 12px; border-radius:999px; margin-bottom:22px;
   }
   .kicker::before{ content:"◆"; font-size:0.6rem; }
- 
+
   h1.title{
     font-family:'Big Shoulders Stencil', sans-serif;
     font-size:clamp(3rem, 8vw, 6.4rem);
@@ -208,15 +155,15 @@ Port coin · HTML
     font-size:1.15rem; color:var(--paper-dim);
   }
   .lede strong{ color:var(--paper); }
- 
+
   .tag-row{
     display:flex; justify-content:center; gap:10px; flex-wrap:wrap;
     margin-top:26px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:var(--steel);
   }
   .tag-row span{ border:1px solid var(--line); padding:6px 14px; border-radius:999px; }
- 
+
   .hero-cta{ display:flex; justify-content:center; gap:14px; margin-top:32px; flex-wrap:wrap; }
- 
+
   .contract-box{
     max-width:620px; margin:36px auto 0;
     border:1px solid var(--line); border-radius:12px;
@@ -231,11 +178,11 @@ Port coin · HTML
     padding:9px 16px; font-weight:600; font-size:0.82rem; flex:none;
   }
   .copy-btn:hover{ background:#f0632a; }
- 
+
   .crane-box{ position:relative; height:340px; max-width:520px; margin:20px auto 0; }
   @media (max-width:640px){ .crane-box{height:260px;} }
   .crane-box svg{ width:100%; height:100%; }
- 
+
   /* ---------- SECTION helpers ---------- */
   section{ padding:96px 0; }
   @media (max-width:760px){ section{padding:68px 0;} }
@@ -245,7 +192,7 @@ Port coin · HTML
     font-size:clamp(2rem, 4.4vw, 3.4rem); line-height:0.98; color:var(--paper); max-width:18ch;
   }
   .center{ text-align:center; margin-left:auto; margin-right:auto; }
- 
+
   /* ---------- delay section ---------- */
   .delay-section{ background:var(--sea); text-align:center; }
   .delay-section .lines p{ font-family:'Space Grotesk', sans-serif; color:var(--paper-dim); font-size:1.05rem; }
@@ -254,7 +201,7 @@ Port coin · HTML
     font-family:'Big Shoulders Stencil', sans-serif; text-transform:uppercase; font-weight:700;
     font-size:clamp(1.5rem, 3vw, 2.1rem); color:var(--yellow); margin:20px 0;
   }
- 
+
   /* ---------- live trade ---------- */
   .live{ background:var(--ink); }
   .live-card{
@@ -268,7 +215,7 @@ Port coin · HTML
   .live-card .strong{ color:var(--paper); font-weight:600; }
   .live-tags{ display:flex; justify-content:center; gap:10px; margin:24px 0; font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:var(--steel); flex-wrap:wrap; }
   .live-tags span{ border:1px solid var(--line); padding:6px 14px; border-radius:999px; }
- 
+
   /* ---------- pillars / why $port ---------- */
   .pillars{ background:var(--sea); position:relative; overflow:hidden; }
   .pillar-list{ display:flex; flex-direction:column; gap:2px; margin-top:56px; }
@@ -286,7 +233,7 @@ Port coin · HTML
   .pillar p{ color:var(--paper-dim); max-width:60ch; }
   .pillar .verdict{ color:var(--orange); font-weight:600; margin-top:6px; }
   .pillar::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--orange); border-radius:12px 0 0 12px; }
- 
+
   /* ---------- the joke ---------- */
   .narrative{ background:var(--paper); color:var(--ink); }
   .narrative blockquote{
@@ -300,7 +247,7 @@ Port coin · HTML
     font-weight:700; font-size:1.4rem;
   }
   .narrative .hero-cta{ justify-content:flex-start; margin-top:30px; }
- 
+
   /* ---------- how to buy ---------- */
   .steps{ background:var(--ink); }
   .step-list{ counter-reset:step; margin-top:50px; display:flex; flex-direction:column; gap:2px; }
@@ -313,7 +260,7 @@ Port coin · HTML
   .step h4{ font-family:'Big Shoulders Stencil', sans-serif; text-transform:uppercase; font-size:1.2rem; color:var(--paper); margin-bottom:6px; }
   .step p{ color:var(--paper-dim); }
   .step .note{ margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--yellow); }
- 
+
   /* ---------- meme kit ---------- */
   .memes{ background:var(--sea); }
   .meme-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:50px; background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
@@ -325,7 +272,7 @@ Port coin · HTML
     font-size:1.3rem; color:var(--yellow); line-height:1.1;
   }
   .memes .hint{ margin-top:30px; color:var(--paper-dim); }
- 
+
   /* ---------- kite harbor lore ---------- */
   .lore{
     background:linear-gradient(180deg, var(--sea) 0%, var(--ink) 100%);
@@ -341,7 +288,7 @@ Port coin · HTML
     font-family:'Big Shoulders Stencil', sans-serif; text-transform:uppercase; font-weight:900;
     color:var(--yellow); font-size:1.6rem; transform:rotate(-2deg);
   }
- 
+
   /* ---------- stamp skip ---------- */
   .stamp-skip{ background:var(--ink); text-align:center; }
   .stamp-skip .lines p{ color:var(--paper-dim); font-size:1.05rem; }
@@ -350,13 +297,13 @@ Port coin · HTML
     font-family:'Big Shoulders Stencil', sans-serif; text-transform:uppercase; font-weight:900;
     color:var(--orange); font-size:clamp(1.8rem, 4vw, 2.6rem); margin-top:16px;
   }
- 
+
   /* ---------- join the port ---------- */
   .join{ background:var(--sea-2); text-align:center; }
   .join p.sub{ max-width:56ch; margin:18px auto 0; color:var(--paper-dim); }
   .join .btn-row{ justify-content:center; margin-top:32px; }
   .join .reminder{ margin-top:28px; font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--steel); }
- 
+
   /* ---------- radar / recap ---------- */
   .radar{ background:var(--ink); }
   .radar .contract-box{ margin:0 auto; }
@@ -364,7 +311,7 @@ Port coin · HTML
   .radar-stats .stat{ text-align:center; }
   .radar-stats .k{ font-family:'JetBrains Mono', monospace; font-size:0.72rem; color:var(--steel); text-transform:uppercase; }
   .radar-stats .v{ font-family:'Big Shoulders Stencil', sans-serif; font-size:1.8rem; color:var(--yellow); margin-top:4px; }
- 
+
   /* ---------- disclaimer ---------- */
   .disclaimer-section{ background:var(--sea-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
   .disclaimer-section .box{ border:1px solid var(--line); border-radius:12px; padding:30px 32px; background:var(--ink); }
@@ -374,7 +321,7 @@ Port coin · HTML
   }
   .disclaimer-section p{ color:var(--paper-dim); font-size:0.94rem; }
   .disclaimer-section p + p{ margin-top:10px; }
- 
+
   /* ---------- final cta ---------- */
   .final-cta{
     background:radial-gradient(ellipse 700px 400px at 50% 0%, rgba(226,85,30,0.2), transparent 60%), var(--ink);
@@ -384,7 +331,7 @@ Port coin · HTML
   .final-cta .lede{ margin-top:18px; }
   .final-cta .hero-cta{ margin-top:30px; }
   .final-cta .closer{ margin-top:22px; font-family:'JetBrains Mono', monospace; font-size:0.85rem; color:var(--steel); }
- 
+
   /* ---------- footer ---------- */
   footer{ background:var(--sea-2); border-top:1px solid var(--line); padding:50px 0 28px; }
   .footer-links{ display:flex; justify-content:center; gap:10px; flex-wrap:wrap; font-size:0.9rem; }
@@ -398,7 +345,7 @@ Port coin · HTML
 </style>
 </head>
 <body>
- 
+
 <nav>
   <div class="wrap">
     <div class="brand"><span class="dot"></span>$PORT</div>
@@ -411,22 +358,22 @@ Port coin · HTML
     <a href="#buy" class="ticker-btn">Buy $PORT</a>
   </div>
 </nav>
- 
+
 <header class="hero">
   <div class="orb orb-orange" style="top:-80px; right:-60px;"></div>
   <div class="orb orb-yellow" style="bottom:20px; left:-100px;"></div>
- 
+
   <div class="wrap hero-inner">
     <span class="kicker">SOLANA · 0% TAX · GM CARGO FLEET</span>
     <h1 class="title">$PORT</h1>
     <div class="title-sub">Trade is slow. This coin isn't.</div>
     <p class="lede">The internet's answer to tariffs, customs delays, and containers stuck at sea. <strong>$PORT · Solana · 0% Tax</strong></p>
- 
+
     <div class="hero-cta">
       <a href="#buy" class="btn btn-primary">Buy $PORT</a>
       <a href="#" class="btn btn-ghost">View chart</a>
     </div>
- 
+
     <div class="contract-box">
       <div>
         <div class="label">Contract</div>
@@ -434,18 +381,18 @@ Port coin · HTML
       </div>
       <button class="copy-btn" onclick="navigator.clipboard && navigator.clipboard.writeText(document.getElementById('contract-addr').textContent.trim())">Copy contract</button>
     </div>
- 
+
     <div class="crane-box" aria-hidden="true">
       <svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
         <line x1="0" y1="330" x2="400" y2="330" stroke="#1c3a4c" stroke-width="2"/>
         <rect x="20" y="290" width="70" height="40" rx="6" fill="#e2551e" opacity="0.85"/>
         <rect x="290" y="300" width="70" height="30" rx="6" fill="#f2b705" opacity="0.8"/>
         <rect x="300" y="252" width="70" height="40" rx="6" fill="#5b7885" opacity="0.85"/>
- 
+
         <text x="60" y="120" class="sparkle" font-size="20" fill="#f2b705">✦</text>
         <text x="330" y="150" class="sparkle d2" font-size="16" fill="#e2551e">✦</text>
         <text x="150" y="90" class="sparkle d3" font-size="14" fill="#f2b705">✦</text>
- 
+
         <g class="mascot-float">
           <rect x="140" y="150" width="140" height="120" rx="16" fill="#e2551e" stroke="#0c1a24" stroke-width="3"/>
           <line x1="160" y1="150" x2="160" y2="270" stroke="#a63f16" stroke-width="3"/>
@@ -468,7 +415,7 @@ Port coin · HTML
       </svg>
     </div>
   </div>
- 
+
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>0% TAX</span><span>WAGMI</span><span>INSTANT BERTH</span><span>NO CUSTOMS</span><span>LFG</span><span>KITE HARBOR</span>
@@ -476,7 +423,7 @@ Port coin · HTML
     </div>
   </div>
 </header>
- 
+
 <section class="delay-section">
   <div class="wrap center" style="max-width:700px;">
     <h2 class="h-stencil center">🚢 Your container is delayed.<br>Your bag doesn't have to be.</h2>
@@ -493,7 +440,7 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="live">
   <div class="wrap">
     <div class="live-card">
@@ -514,13 +461,13 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="pillars" id="why">
   <div class="orb orb-orange" style="top:-140px; left:40%; opacity:0.6;"></div>
   <div class="wrap" style="position:relative; z-index:1;">
     <div class="eyebrow">Why $PORT?</div>
     <h2 class="h-stencil">The whole global trade experience, meme-ified</h2>
- 
+
     <div class="pillar-list">
       <div class="pillar">
         <div class="emoji">📦</div>
@@ -549,7 +496,7 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="narrative">
   <div class="wrap">
     <div class="eyebrow" style="color:var(--orange-dim);">The joke is simple</div>
@@ -565,12 +512,12 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="steps" id="buy">
   <div class="wrap">
     <div class="eyebrow">Getting on board</div>
     <h2 class="h-stencil">How to buy</h2>
- 
+
     <div class="step-list">
       <div class="step">
         <div class="num">01</div>
@@ -602,11 +549,11 @@ Port coin · HTML
         </div>
       </div>
     </div>
- 
+
     <div class="hero-cta" style="margin-top:40px;">
       <a href="#" class="btn btn-primary">Buy $PORT</a>
     </div>
- 
+
     <div class="contract-box">
       <div>
         <div class="label">Official contract</div>
@@ -616,12 +563,12 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="memes">
   <div class="wrap">
     <div class="eyebrow">The $PORT meme kit</div>
     <h2 class="h-stencil">Don't explain the lore. Send the meme.</h2>
- 
+
     <div class="meme-grid">
       <div class="meme-item">
         <div class="num">MEME / 01</div>
@@ -639,13 +586,13 @@ Port coin · HTML
     <p class="hint">Copy it. Post it. Send it to the friend who still has a package stuck in customs.</p>
   </div>
 </section>
- 
+
 <section class="lore" id="harbor">
   <div class="orb orb-yellow" style="bottom:-100px; right:-80px;"></div>
   <div class="wrap" style="position:relative; z-index:1;">
     <div class="eyebrow">Welcome to</div>
     <h2 class="h-stencil">Kite Harbor</h2>
- 
+
     <div class="lore-grid" style="margin-top:44px;">
       <div class="lore-card">
         <p>Every trade needs a port. <span class="highlight">Kite Harbor</span> is where $PORT docks.</p>
@@ -657,7 +604,7 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="stamp-skip">
   <div class="wrap center" style="max-width:700px;">
     <div class="eyebrow" style="justify-content:center; display:flex;">The Stamp Skip</div>
@@ -669,7 +616,7 @@ Port coin · HTML
     <p class="final-line">Stamp Skip the paperwork. Skip the delay. Get to the berth.</p>
   </div>
 </section>
- 
+
 <section class="join" id="join">
   <div class="wrap" style="max-width:680px;">
     <div class="eyebrow" style="justify-content:center; display:flex;">Join the port</div>
@@ -683,7 +630,7 @@ Port coin · HTML
     <p class="reminder">Turn on notifications. You don't want to hear about the next shipment after it docks.</p>
   </div>
 </section>
- 
+
 <section class="radar">
   <div class="wrap center" style="max-width:640px;">
     <div class="eyebrow" style="justify-content:center; display:flex;">Keep $PORT on your radar</div>
@@ -704,7 +651,7 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="disclaimer-section">
   <div class="wrap">
     <div class="box">
@@ -717,7 +664,7 @@ Port coin · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="final-cta">
   <div class="wrap center" style="max-width:640px;">
     <h2 class="title stencil">Trade is slow.<br>$PORT isn't.</h2>
@@ -728,7 +675,7 @@ Port coin · HTML
     <div class="closer">Your container can wait. Your bag doesn't have to.</div>
   </div>
 </section>
- 
+
 <footer>
   <div class="wrap">
     <div class="footer-links">
@@ -747,7 +694,6 @@ Port coin · HTML
     <div class="fine">© $PORT — Fictional meme project. DYOR.</div>
   </div>
 </footer>
- 
+
 </body>
 </html>
- 
